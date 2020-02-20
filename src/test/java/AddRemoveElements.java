@@ -4,7 +4,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
+import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
+
+import static org.testng.Assert.assertEquals;
 
 public class AddRemoveElements {
     @Test
@@ -20,6 +23,11 @@ public class AddRemoveElements {
         WebElement element2 = browser.findElement(By.xpath("//button[text()='Delete']"));
         element2.click();
 
+        ArrayList deleteButtons = (ArrayList) browser.findElements(By.xpath("//*[@onclick='deleteElement()']"));
+        assertEquals(deleteButtons.size(), 1, "Количество кнопок не равно 1");
+
         browser.quit();
     }
 }
+
+
