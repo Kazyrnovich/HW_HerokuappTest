@@ -1,0 +1,24 @@
+# Project exclude paths
+// первые три обязательно
+target/*
+// или
+/target/
+.idea
+*.iml
+
+*.class
+
+# Log file
+# BlueJ files
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.zg
+*.rar
