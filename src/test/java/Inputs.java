@@ -27,12 +27,12 @@ public class Inputs {
         browser.navigate().refresh();
         browser.findElement(By.xpath("//input")).sendKeys("CradleOfFilth");
         String bukvaResult = browser.findElement(By.xpath("//input")).getAttribute("value");
-        assertEquals(bukvaResult, "");
+        assertEquals(bukvaResult, "CradleOfFilth", "CradleOfFilth");
 
         browser.navigate().refresh();
         browser.findElement(By.xpath("//input")).sendKeys("666");
         String cifraResult = browser.findElement(By.xpath("//input")).getAttribute("value");
-        assertEquals(cifraResult, "666");
+        assertEquals(cifraResult, "666", "666");
 
         browser.quit();
     }
