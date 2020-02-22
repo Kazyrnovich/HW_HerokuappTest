@@ -18,7 +18,8 @@ public class NotificationMessages {
         browser.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         WebElement element1 = browser.findElement(By.xpath("//*[@id=\"content\"]/div/p/a"));
         element1.click();
-        browser.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        browser.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        // по условию "дождаться появления нотификации"
         WebElement element2 = browser.findElement(By.id("flash"));
         String value = element2.getAttribute("innerText"); //взять весь текст
         assertEquals(value, "Action unsuccesful, please try again\n" + "×", "Неверное сообщение");
