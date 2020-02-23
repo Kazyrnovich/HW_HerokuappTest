@@ -14,6 +14,7 @@
     </title>
 </head>
 <body>
+<title>Таблица</title>
 <table border="1" cellspacing="0" hight="200" width="400">
     <tr>
         <th align="center" rowspan="2" valign="middle">номер</th>
@@ -204,10 +205,7 @@
 <a href="https://vk.com/id2667042">Обо мне</a><br>
 
 <a href="https://vk.com/id2667042?z=photo2667042_403373607%2Falbum2667042_0%2Frev"> Моё фото<br> <img alt="Дедушка"
-                                                                                                      src="https://pp.userapi.com/c629203/v629203042/34d13/gIFTm7XyHnU.jpg"
                                                                                                       style="width:10%"
-                                                                                                      title="Дедушка"></a>
-
 </body>
 
 <title>Элемент DIV</title>
@@ -264,4 +262,63 @@
     </blockquote>
 </section>
 
+<body>
+<title>Тег Input</title>
+<form action="input1.php" method="post" name="test">
+    <p><b>Ваше имя:</b><br>
+        <input size="40" type="text">
+    </p>
+    <p><b>Каким браузером в основном пользуетесь:</b><Br>
+        <input name="browser" type="radio" value="ie"> Internet Explorer<Br>
+        <input name="browser" type="radio" value="opera"> Opera<Br>
+        <input name="browser" type="radio" value="firefox"> Firefox<Br>
+    </p>
+    <p>Комментарий<Br>
+        <textarea cols="40" name="comment" rows="3"></textarea></p>
+    <p><input type="submit" value="Отправить">
+        <input type="reset" value="Очистить"></p>
+</form>
+</body>
+
+<title>псевдокласс :cheked</title>
+<style>
+    input:checked + span {
+        background: #fc0;
+    }
+</style>
+<body>
+<p><strong>Какую музыку вы слушаете?</strong></p>
+<p><input name="a1" type="checkbox"><span>Trash</span><br>
+    <input name="a2" type="checkbox"><span>Heavy</span><br>
+    <input name="a3" type="checkbox"><span>Hard</span><br>
+    <input name="a4" type="checkbox"><span>Gothic</span><br>
+    <input name="a5" type="checkbox"><span>Alternative</span><br>
+    <input name="a6" type="checkbox"><span>Black metal</span></p>
+<p><input type="submit" value="Отправить"></p>
+</body>
+
+<body>
+<title>тег Select</title>
+<p><select name="group[]" size="3">
+    <option disabled>Выберите группу</option>
+    <option value="Cradle Of Filth">Cradle Of Filth</option>
+    <option selected value="Dimmu Borgir">Dimmu borgir</option>
+    <option value="Sepultura">Sepultura</option>
+    <option value="Immortal">Immortal</option>
+</select></p>
+<p><input type="submit" value="Отправить"></p>
+
+</body>
+
+<body>
+<title>тег Button</title>
+<p style="text-align: center">
+    <button>Кнопка с текстом</button>
+    <button><img alt="Зонтик" src="images/umbrella.gif"
+                 style="vertical-align: middle"> Кнопка с рисунком
+    </button>
+</p>
+</body>
+
+</body>
 </html>
